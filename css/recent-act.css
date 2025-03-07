@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+}
+.header {
+    background: #1F1E26;
+    color: white;
+    margin-left: 10px;
+    padding: 20px;
+    height: 60%;
+    border-radius: 0 0 25px 25px;
+    width: 98%;
+    top: 0;
+    z-index: 1;
+    transition: background-color 0.3s; 
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 4rem;
+    margin-top: 11rem;
+}
+.header p{
+    color: white;
+    font-size: 30px;
+    font-family: 'cursive', Georgia;
+    font-style: italic;
+    text-align: left;
+    margin-top: -55px;
+    padding-left: 7.5rem;
+    letter-spacing: 4px;
+}
+.header h2{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    padding-left: 75px;
+}
+.header h3{
+    color: white;
+    font-family: Georgia;
+    padding-left: 75px;
+    padding-top: 5px;
+    font-size: 16px;
+
+}
+.header .backdrop{
+    height: 120%;
+    width: 40%;
+    margin-left: 45rem;
+    margin-top: -20rem;
+}
+.header .back {
+    width: 25px;
+    height: 25px;
+    margin: 10px; 
+    position: absolute;
+    top: 10px; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.header .back:hover {
+    transform: scale(1.2); /* Scale the image on hover */
+}
+.activity p{
+    margin-top: 20px;
+    margin-left: 35px;
+    padding-left: 3px;
+    color: #1F1E26;
+    font-weight: bolder;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.activity p:hover::after {
+    content: '';
+    display: block;
+    width: 105%;
+    height: 2px;
+    color: orange; 
+    background-color:darkslategray; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header img {
+        margin-top: 8em;
+        margin-left: 1rem;
+    }
+
+    .header p {
+        font-size: 24px;
+        margin-top: -40px;
+        padding-left: 3.7rem;
+    }
+
+    .header h2 {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .header h3 {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+
+    .header .backdrop {
+        margin-left: 20rem;
+        margin-top: -30rem;
+        margin-bottom: 75px;
+    }
+
+    .activity p {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-left: 20px;
+        padding-left: 3px;
+    }
+}
+
+  

@@ -1,0 +1,471 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: white;
+}
+.header {
+  background: #1F1E26;
+  color: white;
+  margin-left: 10px;
+  padding: 20px;
+  height: 30%;
+  border-radius: 0 0 25px 25px;
+  width: 98%;
+  top: 0;
+  z-index: 1;
+  transition: background-color 0.3s; 
+}
+.header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 4rem;
+  margin-top: 11rem;
+}
+.header .back {
+  width: 25px;
+  height: 25px;
+  margin: 10px; 
+  position: absolute;
+  top: 10px; 
+  transition: transform 0.3s ease-in-out; 
+}
+.header .backdrop{
+  width: 33%;
+  height: 40%;
+  margin-left: 50rem;
+  margin-top: -1rem;
+}
+.header p{
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+  padding-left: 15rem;
+  letter-spacing: 3px;
+}
+.bg-acc{
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: -5rem;
+  margin-left: 3rem;
+}
+.bg-acc img{
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin-left: .8rem;
+  margin-top: .8rem;
+}
+.buttons{
+  margin-left: 57rem;
+  margin-top: -6.5rem;
+  display: flex;
+}
+.add-recipe,
+.edit-prof {
+  background-color: #1F1E26;
+  height: 50px;
+  width: 120px;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center; 
+  margin-left: 5px;
+}
+
+.add-recipe a,
+.edit-prof a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin: auto; 
+}
+
+.add-recipe:hover,
+.edit-prof:hover{
+  background-color: #717171;
+}
+#manage-post{
+  background-color: #1F1E26;
+  width: 200px;
+  height: 50px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  margin-left: 59rem;
+  margin-top: 1rem;
+}
+#manage-post img{
+  height: 30px;
+  width: 30px;
+  vertical-align: middle; 
+  margin-right: 5px;
+}
+#manage-post:hover{
+  background-color: #717171;
+}
+.search-container {
+  display: flex;
+  margin-top: -7rem;
+  margin-left: 450px;
+}
+
+#searchInput {
+  height: 50px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #1F1E26;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+#searchButton {
+  height: 50px;
+  padding: 10px;
+  background-color: #1F1E26;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #717171;
+}
+.menu {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  height: 75px;
+  width: 870px;
+  background-color: #1F1E26;
+  margin-left: 200px;
+  margin-top: 4rem;
+  border-radius: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 20px;
+  margin-left: 15px;
+}
+
+.menu a img {
+  width: 25px;
+  height: 25px;
+  margin-left: 18px;
+}
+
+
+.menu a:hover{
+color: darksalmon;
+}
+.menu a img:hover{
+  filter: grayscale(100%);
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup-container {
+  width: 800px;
+  height: auto;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 15px;
+}
+
+.popup-container img {
+  display: block; /* Change from flex to block */
+  width: 140px;
+  height: 150px;
+  cursor: pointer;
+  float: right;
+  border-radius: 15px;
+  margin-left: auto; /* Set margin-left to auto for right alignment */
+  margin-right: 3px; /* Add margin-right for spacing if needed */
+  align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  /* Styles for screens that are 500px or less */
+
+  .header {
+    width: 236%;
+    padding: 10px;
+  }
+
+  .header img {
+    width: 35px;
+    height: 35px;
+    margin-left: -5rem;
+    margin-top: 0.5rem;
+  }
+
+  .header p {
+    font-size: 30px;
+    padding-left: 10rem;
+  }
+
+  .bg-acc {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bg-acc img {
+    width: 110px;
+    height: 110px;
+    margin-left: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .buttons {
+    margin-top: -2rem;
+  }
+
+  .add-recipe,
+  .edit-prof {
+    height: 40px;
+    width: 100px;
+  }
+
+  .add-recipe a,
+  .edit-prof a {
+    font-size: 12px;
+  }
+
+  #manage-post {
+    width: 120px;
+    height: 40px;
+  }
+
+  #manage-post img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .search-container {
+    margin-top: 1rem;
+  }
+  #searchInput {
+    height: 60px;
+    width: 400; /* Adjust the width percentage as needed */
+    padding: 10px;
+  }
+
+  #searchButton {
+    height: 60px;
+  }
+
+  .menu {
+    width: 150%;
+  }
+
+  .menu a {
+    font-size: 20px;
+    padding: 5px;
+    margin: 3px;
+  }
+
+  .menu a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+
+  .header {
+    width: 174%;
+    padding: 10px;
+  }
+
+  .header .backdrop {
+    width: 350px;
+    height: 300px;
+    margin-left: 57rem;
+    margin-top: 0.5rem;
+  }
+
+  .header p {
+    font-size: 33px;
+    padding-left: 10rem;
+  }
+
+  .bg-acc {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bg-acc img {
+    width: 110px;
+    height: 110px;
+    margin-left: 0.4rem;
+    margin-top: 0.5rem;
+  }
+  .buttons {
+    margin-top: -2rem;
+  }
+
+  .add-recipe,
+  .edit-prof {
+    height: 40px;
+    width: 100px;
+  }
+
+  .add-recipe a,
+  .edit-prof a {
+    font-size: 12px;
+  }
+
+  #manage-post {
+    width: 120px;
+    height: 40px;
+  }
+
+  #manage-post img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .search-container {
+    margin-top: 1rem;
+  }
+  #searchInput {
+    height: 60px;
+    width: 120%; /* Adjust the width percentage as needed */
+    padding: 10px;
+  }
+
+  #searchButton {
+    height: 60px;
+  }
+
+  .menu {
+    width: 150%;
+    margin-left: 7rem;
+  }
+
+  .menu a {
+    font-size: 23px;
+    padding: 5px;
+    margin: 7px;
+  }
+
+  .menu a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /* Styles for screens that are 1200px or less */
+  /* Adjust the styles as needed */
+
+  .header {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .header .backdrop {
+    width: 300px;
+    height: 250px;
+    margin-left: 50rem;
+    margin-top: 0.5rem;
+  }
+
+  .header p {
+    font-size: 30px;
+    padding-left: 8rem;
+  }
+
+  .bg-acc {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bg-acc img {
+    width: 90px;
+    height: 90px;
+    margin-left: 0.3rem;
+    margin-top: 0.4rem;
+  }
+
+  .buttons {
+    margin-top: -1.5rem;
+  }
+
+  .add-recipe,
+  .edit-prof {
+    height: 35px;
+    width: 90px;
+  }
+
+  .add-recipe a,
+  .edit-prof a {
+    font-size: 11px;
+  }
+
+  #manage-post {
+    width: 110px;
+    height: 35px;
+  }
+
+  #manage-post img {
+    height: 18px;
+    width: 18px;
+  }
+
+  .search-container {
+    margin-top: 0.8rem;
+  }
+
+  #searchInput {
+    height: 55px;
+    width: 110%; /* Adjust the width percentage as needed */
+    padding: 9px;
+  }
+
+  #searchButton {
+    height: 55px;
+  }
+
+  .menu {
+    width: 130%;
+    margin-left: 6rem;
+  }
+
+  .menu a {
+    font-size: 20px;
+    padding: 4px;
+    margin: 6px;
+  }
+
+  .menu a img {
+    width: 35px;
+    height: 35px;
+  }
+}
