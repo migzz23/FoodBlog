@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/recent-act.css">
+    <link rel="stylesheet" href="css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/tooplate-wave-cafe.css">
+    <title></title>
+</head>
+<body>
+    <div class="header">
+        <a href="landingpage.php"><img src="img/icons8-arrow-back-30.png" alt="" class="back"></a>
+        <img src="img/logo.jpg" alt="">
+        <p>Cult's Kitchen</p>
+        <h2>Recent Activity</h2>
+        <h3>See blogs/recipe you recently interacted with and easily</h3>
+        <h3>follow up on the ones you like to learn</h3>
+        <img src="img/Untitled_design__2_-removebg-preview.png" alt="" class="backdrop">
+    </div>
+<div class="activity">
+    <br>
+    <br>
+    <br>
+    <p onclick="showContent('recent')">Recent</p>
+    <p onclick="showContent('saved')">Saved</p>
+</div>
+<div id="recent" class="content">
+    <div class="tm-list">
+      <div class="tm-list-item">          
+        <img src="img/PARIS FOOD AND FLORAL WORKSHOP.jfif" alt="Image" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Macaroons<span class="tm-list-item-price"><a href="recipe.php#recipe-espresso-cake">view recipe</a><img src="img/icons8-book-mark-99.png" alt=""></span></h3>
+          <p class="tm-list-item-description">Masarap.</p>
+        </div>
+      </div>
+      <div class="tm-list-item">          
+        <img src="img/770637d7b5e809dfa43a253b247774a1.png" alt="Image" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Canton<span class="tm-list-item-price"><a href="recipe.php#recipe-pasta">view recipe</a><img src="img/icons8-book-mark-99.png" alt=""></span></h3>
+          <p class="tm-list-item-description">Masarap.</p>
+        </div>
+      </div>
+      <div class="tm-list-item">          
+        <img src="img/img8.jpg" alt="Image" class="tm-list-item-img">
+        <div class="tm-black-bg tm-list-item-text">
+          <h3 class="tm-list-item-name">Bagoong<span class="tm-list-item-price"><a href="recipe.php#recipe-chicken">view recipe</a><img src="img/icons8-book-mark-99.png" alt=""></span></h3>
+          <p class="tm-list-item-description"> sdfsdf </p>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <script>
+    function showContent(contentId) {
+        var allContent = document.querySelectorAll('.content');
+        allContent.forEach(function(content) {
+            content.style.display = 'none';
+        });
+
+        var selectedContent = document.getElementById(contentId);
+        if (selectedContent) {
+            selectedContent.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>

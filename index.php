@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Pigga landing page.">
+    <meta name="author" content="Devcrud">
+    <title></title>
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <header class="header">
+        <div class="overlay">
+            <img src="img/logo.jpg" alt="" class="logo">
+            <h1 class="subtitle">Welcome To Our Page</h1>
+            <h1 class="title"> Cult's Kitchen</h1> 
+            <a class="btn btn-primary mt-3" href="reg.php">Sign-up</a> 
+        </div> 
+    </header>
+    <h3>Immerse yourself in the rich world of food culture. </h3>
+<section>
+    <div class="recipe">
+        <img src="img/Easy Chicken Paprikash (Paprikas Csirke)-Stove-Top or Instant Pot.jfif" alt="Pasta Carbonara">
+        <div class="recipe-content">
+            <h2>Chicken Paprikash</h2>
+            <h5>Embark on a culinary journey to Hungary with our Hungarian Chicken Paprikash, a dish 
+                that celebrates the rich flavors and traditions of Eastern European cuisine.</h5>
+            
+        </div>
+    </div>
+
+    <div class="recipe">
+        <img src="img/Crispy Air Fryer Chicken Bites (+25 Air Fryer Chicken Recipes) (2).jfif" alt="Margherita Pizza">
+        <div class="recipe-content">
+            <h2>Crispy Air Fryer Chicken Bites</h2>
+            <h5>These golden nuggets of delight are a testament to the magic of air frying, achieving
+                the perfect balance of crispiness and juiciness.</h5>
+        </div>
+    </div>
+    <div class="recipe">
+        <img src="img/Fall off the Bone Slow Cooker Hawaiian Ribs.jfif" alt="Margherita Pizza">
+        <div class="recipe-content">
+            <h2>Fall off the Bone Slow Cooker Hawaiian Ribs</h2>
+            <h5>Indulge in a tropical culinary escape with our Fall off the Bone Slow Cooker Hawaiian Ribs. </h5>
+        </div>
+    </div>
+    </div>
+</section>
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
+                    </div>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%;">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" style="margin-top: 45px;">
+                <h5 class="section-title ff-secondary text-start text-primary fw-normal">About the page</h5>
+                <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Cult's Kitchen</h1>
+                <p class="mb-4">Welcome to Cult's Kitchen, the ultimate destination for culinary inspiration and gastronomic delights!</p>
+                <p class="mb-4">We are passionate food enthusiasts who believe that cooking and sharing meals are not just tasks but joyful experiences that bring people together.</p>
+                <div class="row g-4 mb-4">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">147,340</h1>
+                            <div class="ps-4">
+                                <p class="mb-0">Number of</p>
+                                <h6 class="text-uppercase mb-0">Users</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">7,714</h1>
+                            <div class="ps-4">
+                                <p class="mb-0">Popular</p>
+                                <h6 class="text-uppercase mb-0">Dishes around the world</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+</body>
+</html>
